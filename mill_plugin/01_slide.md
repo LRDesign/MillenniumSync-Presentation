@@ -1,6 +1,3 @@
-<!-- vim: ft=markdown:fo=:lbr 
-Consider :so showoff.vim 
---> 
 !SLIDE 
 # The Plugin #
 
@@ -23,3 +20,7 @@ Key to the process of synchronizing records is first scanning them for differenc
 Database scans are not made of unicorn poop.  They just aren't.  
 
 The key to letting scans be lightweight is to keep track of where we are at any point so that we can pick right back up when we get interupted.
+
+<!-- vim: ft=markdown:fo=:lbr 
+Consider :so showoff.vim 
+--> 

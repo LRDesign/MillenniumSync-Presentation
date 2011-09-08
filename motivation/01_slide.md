@@ -1,6 +1,3 @@
-<!-- vim: ft=markdown:fo=:lbr 
-Consider :so showoff.vim 
---> 
 !SLIDE 
 # My Presentation #
 
@@ -35,3 +32,6 @@ That's what we thought.  Ultimately, we needed to do exactly that.
 
 There was an extra requirement: all changes needed to be confirmed by an 
 administrative user.
+<!-- vim: ft=markdown:fo=:lbr 
+Consider :so showoff.vim 
+--> 
