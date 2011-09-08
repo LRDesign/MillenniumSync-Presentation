@@ -1,1 +1,5 @@
-{ "name": "My Preso", "sections": [ {"section":"one"} ]}
+{ "name": "Millenium Sync", 
+  "sections": 
+  [ {"section":"motivation",
+     "section":"transition",
+     "section":"mill_plugin"} ]}
