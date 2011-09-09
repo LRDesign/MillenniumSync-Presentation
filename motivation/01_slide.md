@@ -30,6 +30,7 @@
 # Problems:
 
 * We need data that Millennium doesn't store:
+* Login credentials
 * User bios, preferences, images
 * News / forums / CMS
 * Can't change Mill's schema
@@ -82,7 +83,7 @@
 ![Option 3: Two DBs, cloned tables](images/Option3.png)
 
 !SLIDE full-page
-![Option 3b: Two DBs with scanner](images/Option3.png)
+![Option 3b: Two DBs with scanner](images/Option3a.png)
 
 
 <!--!SLIDE -->
