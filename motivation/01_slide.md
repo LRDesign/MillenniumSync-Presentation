@@ -66,7 +66,7 @@
 
 !SLIDE bullets incremental
 # "Pending Problems"
-* Primary key assigned after approval
+* Primary key assigned *after approval*
 * Different values in two tables
 * Multiple updates generate multiple rows
 
