@@ -82,7 +82,7 @@
 ![Option 3: Two DBs, cloned tables](images/Option3.png)
 
 !SLIDE full-page
-![Option 3b: Two DBs with scanner](images/Option3a.png)
+![Option 3b: Two DBs with scanner](images/Option3b.png)
 
 
 <!--!SLIDE -->
