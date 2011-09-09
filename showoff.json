@@ -1,6 +1,8 @@
 { "name": "Millenium Sync", 
   "sections": 
-    [ { "section":"motivation" },
+    [ 
+    { "section":"intro" },
+    { "section":"motivation" },
     {"section":"transition"  },
     {"section":"mill_plugin" } 
   ]}
