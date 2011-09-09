@@ -45,7 +45,7 @@
 !SLIDE bullets incremental
 # Two-DB Problems:
 * Can't join between databases
-* User bio, privacy, photo in one DB
+* User bio, credentials, photo in one DB
 * All other user info in the other!
 * Massive N+1 query problems
 
