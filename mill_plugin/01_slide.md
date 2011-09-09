@@ -1,12 +1,6 @@
 !SLIDE 
 # We wrote a Rails plugin
 
-!SLIDE bullets
-# That is
-
-* Dave Ladelfa started it
-* I finished it
-* Evan did the UI
 
 !SLIDE  smbullets incremental
 # Four Parts #
