@@ -45,18 +45,17 @@
 !SLIDE bullets incremental
 # Two-DB Problems:
 * Can't join between databases
-* User bio, credentials, photo in one DB
-* All other user info in the other!
+* User bio data split between two DBs
 * Massive N+1 query problems
 
 
 !SLIDE bullets incremental
 # New Specifications: #
-* App cannot write to Millennium!
+* Web app cannot write to Millennium!
 * Mill writes require manual approval!
 
 !SLIDE bullets incremental
-# "Pending Tables"
+# Mill has "Pending Tables"
 * Data written to temporary table
 * DBA manually approves transfer to Mill
 
@@ -65,16 +64,17 @@
 
 
 !SLIDE bullets incremental
-# "Pending Problems"
+# Pending Problems
 * Primary key assigned *after approval*
 * Different values in two tables
 * Multiple updates generate multiple rows
 
 !SLIDE 
 # Option 3:
+# Two Synced DBs
 
 !SLIDE bullets incremental
-# Our DB clones Mill schema, plus ours
+# Our DB clones Mill schema, plus our tables
 * Serve only from our DB
 * Two-way sync with approval
 
