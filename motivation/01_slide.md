@@ -58,8 +58,7 @@
 !SLIDE bullets incremental
 # "Pending Tables"
 * Data written to temporary table
-* DBA manually approves all writes
-* Approved data written to main tables
+* DBA manually approves transfer to Mill
 
 !SLIDE full-page
 ![Pending Tables](images/PendingTables.png)
