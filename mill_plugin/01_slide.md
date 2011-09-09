@@ -1,4 +1,4 @@
-!SLIDE subsection
+!SLIDE 
 # We wrote a Rails plugin
 
 !SLIDE bullets
@@ -9,7 +9,7 @@
 * Evan did the UI
 
 !SLIDE  smbullets incremental
-# 4 Parts #
+# Four Parts #
 
 * Acts\_as\_\* ActiveRecord modules
 * A data mapping DSL
