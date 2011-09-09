@@ -19,6 +19,16 @@
 * Bad schema
 * Atrocious data formatting
 
+!SLIDE bullets incremental
+# More fun:
+* Dozens of kiloline triggers!
+* ... with no docco
+* ... that we aren't allowed to see
+* ... and that don't emit backtraces
+
+!SLIDE
+# So how do we do it?
+
 !SLIDE
 # Option 1: #
 ## Use Millennium as Site DB 
