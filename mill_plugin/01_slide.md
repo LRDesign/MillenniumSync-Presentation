@@ -29,9 +29,9 @@
 !SLIDE bullets
 # ActiveRecord
 
-* acts\_as\_millennium
-* acts\_as\_millsyncable
-* mark AR objects as pairs
+* <code>acts\_as\_millennium</code>
+* <code>acts\_as\_millsyncable</code>
+<!-- mark ar as pairs -->
 
 !SLIDE 
 # acts\_as\_millennium #
@@ -54,11 +54,13 @@
 
 !SLIDE 
 # Data Mapping #
-## **Problem:**
-### Data stored in one database isn't properly formatted for the other
+
+!SLIDE
+# Problem:
+## Data stored in one database isn't properly formatted for the other
 
 !SLIDE bullets incremental
-# Example #
+# For Example #
 
 * Millennium pads strings to fixed length
 * Millennium stores timestamps without a time zone
@@ -112,6 +114,7 @@
         return dt.utc
       end
     end
+<!-- this is complicated but powerful -->
 
 !SLIDE small
 # Field pairs #
@@ -120,54 +123,63 @@
     set_field_pair "Due Date", :due_on, :payduedate do |field_pair|
       field_pair.standard_conversion :TimeWithZone
     end
-
-!SLIDE  full-page
-![Image Description](image/MismatchedEvan.png)
+<!-- and can standardize -->
 
 !SLIDE 
-# Synchronization tracking #
+# Synchronization Tracking #
 
 !SLIDE bullets
 # Scan for missing rows #
 
 * Insert on one side
 * Delete on the other
+<!-- diagram -->
 
 !SLIDE bullets
 # Scan for mismatched fields #
 
-* Data translation in both directions
+* Translating in both directions first
+<!-- diagram -->
 
 !SLIDE bullets
-# Both a recorded in the local DB #
+# Both recorded locally
 
 * SynchronizationAdd
 * SynchronizationMismatch
 
-!SLIDE 
+!SLIDE bullets incremental
 # We resolve what we can #
+
+* Creating matching row for Adds
+* Updating older field for Mismatch
 
 !SLIDE bullets incremental
 # The rest goes into a DBA interface #
 
-* Yes: a human being approves a lot of the updates
+* Yes: a human being approves updates individually
 * Required by the client
 
+!SLIDE  full-page
+![Image Description](image/MismatchedEvan.png)
+
+!SLIDE 
+# Scan Records
+
 !SLIDE  bullets incremental
-# New Problem#
+# Problem
 
 * Scans of the busy database are long
-* Full scan is about 6 hours
+* Full scan is about 36 hours
 * And there's memory leaks
 
 !SLIDE 
-# Database scans are long running #
+# Database scans are long running... #
 
 !SLIDE 
-# And valuable... #
+# And fragile...
 
 !SLIDE  full-page
-# ... like unicorn poop #
+# And valuable... #
 
 ![Image Description](image/unicorn_poop.jpg)
 
@@ -181,6 +193,16 @@
 * Keep track of where they are
 * Can pick right back up when interupted
 * (When, not if)
+
+!SLIDE bullets
+# Many advantages
+
+* Who cares about OCI8?
+* Iterative scanning easier
+* Operations likes it
+
+!SLIDE 
+# How's it work?
 
 !SLIDE  full-page
 ![Image Description](image/scan-z.png)
