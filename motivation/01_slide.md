@@ -2,7 +2,7 @@
 # The Task #
 
 !SLIDE 
-# Build the Alumni Directory for Caltech 
+# Build the Alumni Directory<br>for Caltech 
 
 !SLIDE 
 # The Challenge
